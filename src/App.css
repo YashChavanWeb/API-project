@@ -1,0 +1,59 @@
+/* App.css */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 0 10px; /* Adjusted margin */
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Added transition for background-color and transform */
+}
+
+button:hover {
+  background-color: #45a049;
+  transform: scale(1.05); /* Scale button slightly on hover */
+}
+
+button:active {
+  transform: scale(0.95); /* Scale button slightly on click */
+}
+
+.ProfileFinder,
+.PixabayImageSearch {
+  margin-top: 20px;
+  transition: opacity 0.5s ease; /* Added transition for component opening */
+}
+
+/* Media Queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .buttons-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    margin: 10px 0; /* Adjusted margin */
+  }
+}
